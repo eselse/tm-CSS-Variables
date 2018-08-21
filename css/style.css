@@ -1,0 +1,63 @@
+/* Define Variables for root element */
+:root {
+    --main-bg-color:#f4f4f4;
+    --main-text-color:#333;
+    --container-width: 90%;
+    --header-bg-color: #333;
+    --header-text-color: #ddd;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+.container {
+    width: var(--container-width);
+    margin: 20px auto;
+}
+
+header#main-header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+}
+
+header#main-header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    --gap: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: calc(var(--gap) * 1px);
+    align-items: center;
+}
+
+/* Define box variables */
+.box {
+    --box-bg-color: #ddd;
+    --box-main-color: #06c;
+    --box-padding: 5px 10px;
+}
+
+.box {
+    background-color: var(--box-bg-color);
+    padding: var(--box-padding);
+    border: 1px solid var(--box-main-color);
+    box-shadow: 10px 5px 5px var(--box-main-color);
+}
+
+.box h1 {
+    color: var(--box-main-color);
+}
+
+.box p {
+    --box-main-color: #555;
+    color: var(--box-main-color);
+}
+
